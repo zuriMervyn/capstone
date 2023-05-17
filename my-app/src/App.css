@@ -34,32 +34,6 @@
   grid-gap: 20px;
 }
 
-nav {
-  background-color: #282c34;
-  padding: 20px;
-}
-
-ul {
-  list-style: none;
-  display: flex;
-  justify-content: space-between;
-  padding: 0;
-  margin: 0;
-}
-
-li {
-  margin: 0 10px;
-}
-
-a {
-  color: white;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
 .container div {
   flex-basis: 33%;
 }
@@ -89,6 +63,97 @@ a:hover {
 }
 
 .container a:hover {
+  text-decoration: underline;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #000;
+  font-family: 'Times New Roman', Times, serif;
+  /* Additional styles */
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #000;
+  font-family: 'Times New Roman', Times, serif;
+  /* Additional styles */
+}
+
+h3 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #000;
+  font-family: 'Times New Roman', Times, serif;
+  /* Additional styles */
+}
+
+h4 {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #000;
+  font-family: 'Times New Roman', Times, serif;
+  /* Additional styles */
+}
+
+h5 {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #000;
+  font-family: 'Times New Roman', Times, serif;
+  /* Additional styles */
+}
+
+h6 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #000;
+  font-family: 'Times New Roman', Times, serif;
+  
+  /* Additional styles */
+}
+
+/* Paragraphs */
+p {
+  font-size: 1rem;
+  color: #000;
+  font-family: sans-serif
+  /* Additional styles */
+}
+
+/* Spans */
+span {
+  font-weight: bold;
+  color: #000;
+  font-family: sans-serif
+  /* Additional styles */
+}
+
+nav {
+  background-color: #282c34;
+  padding: 20px;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  margin: 0 10px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
   text-decoration: underline;
 }
 
