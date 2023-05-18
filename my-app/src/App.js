@@ -3,24 +3,18 @@ import Header from './Header';
 import Nav from './Nav';
 import Main from './Main';
 import Footer from './Footer';
-import Banner from './Banner';
-import Specials from './Specials';
-import Testimonials from './Testimonials';
-import AboutContainer from './AboutContainer';
-import './App.css'; // Import the App.css file\
-
+import './App.css';
+import { BrowserRouter as Router } from 'react-router-dom';
 
 const App = () => {
   return (
     <div>
-      <Header/>
-      <Nav/>
-      <Main/>
-      <Banner/>
-      <Specials/>
-      <Testimonials/>
-      <AboutContainer/>
-      <Footer/>
+      <Router>
+        <Header />
+        <Nav />
+        <Main />
+        <Footer />
+      </Router>
     </div>
   );
 };

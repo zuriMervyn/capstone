@@ -1,11 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { BrowserRouter as Router } from 'react-router-dom';
 import './App.css';
 
 const Nav = () => {
   return (
-   <Router>
         <nav className="container">
             <ul>
                 <li>
@@ -28,7 +26,6 @@ const Nav = () => {
                 </li>
             </ul>
         </nav>
-    </Router>
   );
 };
 

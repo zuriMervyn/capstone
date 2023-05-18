@@ -1,12 +1,14 @@
 import React from 'react';
 import './App.css';
+import BookingForm from "./BookingForm";
 
-const Reservations = () => {
+function App() {
   return (
-    <main className="container">
-      <p>This is the main content</p>
-    </main>
+    <div>
+      <h1>Little Lemon Web App</h1>
+      <BookingForm />
+    </div>
   );
-};
+}
 
-export default Reservations;
+export default App;
