@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-function BookingForm() {
+function BookingForm({ submitForm }) {
   const [date, setDate] = useState("");
   const [time, setTime] = useState("");
   const [guests, setGuests] = useState("");
@@ -8,7 +8,8 @@ function BookingForm() {
   const [availableTimes, setAvailableTimes] = useState([]);
 
   function fetchAPI(selectedDate) {
-    // Replace with your actual API call to fetch available times
+    const endpoint = `https://raw.githubusercontent.com/Meta-Front-End-Developer-PC/capstone/master/api.js`;
+
     return new Promise((resolve, reject) => {
       // Simulating API call with setTimeout
       setTimeout(() => {
@@ -32,6 +33,10 @@ function BookingForm() {
   }
 
   useEffect(() => {
+    initializeTimes();
+  }, []);
+
+  useEffect(() => {
     if (date !== "") {
       updateTimes(date);
     }
@@ -39,7 +44,13 @@ function BookingForm() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log("Form submitted!");
+    const formData = {
+      date,
+      time,
+      guests,
+      occasion
+    };
+    submitForm(e, formData);
   };
 
   return (
